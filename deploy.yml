@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: micro-ctr
-        image: us-docker.pkg.dev/startrek-387807/gcr.io/micro:latest
+        image: us-central1-docker.pkg.dev/startrek-387807/atlantis/micro:latest
         command: ["node", "."]
         ports:
         - containerPort: 3000
