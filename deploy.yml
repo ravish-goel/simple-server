@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: micro-ctr
-        image: gcr.io/startrek-387807/micro:2
+        image: gcr.io/startrek-387807/micro:latest
         command: ["node", "."]
         ports:
         - containerPort: 3000
