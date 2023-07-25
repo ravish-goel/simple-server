@@ -20,7 +20,7 @@ env:
   GKE_ZONE: us-central1   # Add your cluster zone here.
   DEPLOYMENT_NAME: micro-test # Add your deployment name here.
   IMAGE: micro
-  IMAGE_TAG: 1.0
+  IMAGE_TAG: 1
 
 jobs:
   setup-build-publish-deploy:
@@ -71,5 +71,5 @@ jobs:
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
       run: |-
-        kubectl apply -f deployment.yml
+        kubectl apply -f deploy.yml
         kubectl get pods
