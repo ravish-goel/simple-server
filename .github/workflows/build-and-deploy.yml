@@ -18,9 +18,8 @@ env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_CLUSTER: autopilot-cluster-1    # Add your cluster name here.
   GKE_ZONE: us-central1   # Add your cluster zone here.
-  DEPLOYMENT_NAME: micro-test # Add your deployment name here.
   IMAGE: micro
-  IMAGE_TAG: 1
+  IMAGE_TAG: 2
 
 jobs:
   setup-build-publish-deploy:
